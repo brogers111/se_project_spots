@@ -3,7 +3,7 @@
 ## Project Snapshots
 ![Spots Desktop Display](https://github.com/user-attachments/assets/f2b109ca-11b5-4419-ab85-2d4b50485e3d)
 
-![Spots Mobile Display](https://github.com/user-attachments/assets/30c447c6-268f-442f-9362-da0814faeab6)
+![Spots Mobile Display](https://github.com/user-attachments/assets/96e51a7e-4a66-46a9-be75-bf9cf91afd98)
 
 ## Description
 
