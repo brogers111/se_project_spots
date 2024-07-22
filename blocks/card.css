@@ -27,7 +27,7 @@
 .card__button-like{
     height: 20px;
     width: 23px;
-    background: transparent url("../images/heart-icon.png") no-repeat center / contain;
+    background: transparent url("../images/heart-icon.svg") no-repeat center / contain;
     border: none;
     transition: opacity 0.25s ease-in-out;
     align-self: flex-end;

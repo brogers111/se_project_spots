@@ -12,6 +12,7 @@
 }
 
 .profile__avatar{
+    object-fit: cover;
     width: 190px;
     height: 190px;
     border-radius: 8px;
