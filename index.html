@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Spots</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Brandon Rogers">
+        <meta name="description" content="This is Brandon Rogers' version of Project 3 of the TipleTen bootcamp.">
+        <meta name="keywords" content="html, css, media queries, responsive design, grid, flexbox">
+        <title>Project Spots</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="icon" type="images/x-icon" href="./favicon.ico">
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+                <img src="./images/logo.svg" alt="SPOTS Logo" class="header__logo">
+            </header>
+            <main class="content">
+                <section class="profile">
+                    <div class="profile__details">
+                        <img src="./images/avatar.jpg" alt="Bessie Coleman Avatar" class="profile__avatar">
+                        <div class="profile__personal-info">
+                            <div class="profile__personal-name-desc">
+                                <h1 class="profile__name overflow overflow--multi">Bessie Coleman</h1>
+                                <p class="profile__desc overflow overflow--multi">Civil Aviator</p>
+                            </div>
+                            <button class="profile__button-edit"><img src="./images/pencil-icon.png" alt="button icon" class="profile__button-edit-icon">Edit Profile</button>
+                        </div>
+                    </div>
+                    <button class="profile__button-new"><img src="./images/plus-icon.svg" alt="plus icon" class="profile__button-new-icon">New Post</button>
+                </section>
+                <section class="cards">
+                    <ul class="cards__list">
+                        <li class="card">
+                            <img src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg" alt="val thorens" class="card__img">
+                            <div class="card__details">
+                                <h2 class="card__caption overflow overflow--single">Val Thorens</h2>
+                                <button class="card__button-like" aria-label="like button"></button>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <img src="./images/2-photo-by-ceiline-from-pexels.jpg" alt="restaurant terrace" class="card__img">
+                            <div class="card__details">
+                                <h2 class="card__caption overflow overflow--single">Restaurant Terrace</h2>
+                                <button class="card__button-like" aria-label="like button"></button>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <img src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg" alt="outdoor cafe" class="card__img">
+                            <div class="card__details">
+                                <h2 class="card__caption overflow overflow--single">An outdoor cafe</h2>
+                                <button class="card__button-like" aria-label="like button"></button>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <img src="./images/4-photo-by-maurice-laschet-from-pexels.jpg" alt="long bridge" class="card__img">
+                            <div class="card__details">
+                                <h2 class="card__caption overflow overflow--single">A very long bridge, over the forest...</h2>
+                                <button class="card__button-like" aria-label="like button"></button>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <img src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg" alt="tunnel with morning light" class="card__img">
+                            <div class="card__details">
+                                <h2 class="card__caption overflow overflow--single">Tunnel with morning light</h2>
+                                <button class="card__button-like" aria-label="like button"></button>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <img src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg" alt="mountain house" class="card__img">
+                            <div class="card__details">
+                                <h2 class="card__caption overflow overflow--single">Mountain house</h2>
+                                <button class="card__button-like" aria-label="like button"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+            <footer class="footer">
+                <p class="footer__details">2024 &copy; Spots</p>
+            </footer>
+        </div>
+    </body> 
 </html>

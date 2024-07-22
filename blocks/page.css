@@ -1,0 +1,10 @@
+.page{
+    background-color: rgba(252, 245, 229, 1);
+    margin: 0 auto;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 500;
+    color: rgba(33, 33, 33, 1);
+    box-sizing: border-box;
+}

@@ -1,0 +1,46 @@
+.card{
+    width: 100%;
+    list-style-type: none;
+}
+
+.card__img{
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.card__details{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0 0;
+}
+
+.card__caption {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 353px;
+}
+
+.card__button-like{
+    height: 20px;
+    width: 23px;
+    background: transparent url("../images/heart-icon.png") no-repeat center / contain;
+    border: none;
+    transition: opacity 0.25s ease-in-out;
+    align-self: flex-end;
+    opacity: 40%;
+}
+
+.card__button-like:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 654px) {
+    .card__caption{
+        font-size: 16px;
+    }
+}
