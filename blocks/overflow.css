@@ -3,11 +3,11 @@
     overflow: hidden;
   }
   
-  .overflow--single {
+  .overflow_type_single {
     white-space: nowrap;
   }
   
-  .overflow--multi {
+  .overflow_type_multi {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
