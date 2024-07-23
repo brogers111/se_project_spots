@@ -1,6 +1,7 @@
 # Spots Project (TripleTen Bootcamp - Sprint 3)
 
 ## Project Snapshots
+
 ![Spots Desktop Display](https://github.com/user-attachments/assets/f2b109ca-11b5-4419-ab85-2d4b50485e3d)
 
 ![Spots Mobile Display](https://github.com/user-attachments/assets/96e51a7e-4a66-46a9-be75-bf9cf91afd98)
@@ -28,7 +29,7 @@ Feel free to view the completed project by clicking the [link here.](https://bro
 
 ## Demo
 
-The demo for this project will be linked here once a more finalized version is approved.
+The demo for this project will be [linked here](https://drive.google.com/file/d/1-oEg8NBMb1xg5lhtA5YEGWZHWFxISQF6/view?usp=sharing) once a more finalized version is approved.
 
 ## Future Improvements
 
