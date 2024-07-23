@@ -10,6 +10,10 @@
 
 The Spots application allows users to create profiles and upload their own unique photos of places or experiences that they'd want to share with others.
 
+## Demo
+
+The demo for this project will be [linked here](https://drive.google.com/file/d/1-oEg8NBMb1xg5lhtA5YEGWZHWFxISQF6/view?usp=sharing) once a more finalized version is approved.
+
 ## Tech Stack
 
 - Semantic HTML5
@@ -26,10 +30,6 @@ View this project's Figma file by clicking the [link here.](https://www.figma.co
 ## Deployment
 
 Feel free to view the completed project by clicking the [link here.](https://brogers111.github.io/se_project_spots/)
-
-## Demo
-
-The demo for this project will be [linked here](https://drive.google.com/file/d/1-oEg8NBMb1xg5lhtA5YEGWZHWFxISQF6/view?usp=sharing) once a more finalized version is approved.
 
 ## Future Improvements
 
