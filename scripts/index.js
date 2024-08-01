@@ -1,3 +1,20 @@
+const editProfileButton = document.querySelector(".profile__button-edit");
+const editProfileModal = document.querySelector("#edit-profile-modal");
+const editProfileCloseModal =
+  editProfileModal.querySelector(".modal__close-btn");
+
+function openModal() {
+  editProfileModal.classList.add("modal-opened");
+}
+
+function closeModal() {
+  editProfileModal.classList.remove("modal-opened");
+}
+
+editProfileButton.addEventListener("click", openModal);
+
+editProfileCloseModal.addEventListener("click", closeModal);
+
 const initialCards = [
   {
     name: "Val Thorens",
