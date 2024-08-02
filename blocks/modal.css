@@ -72,6 +72,7 @@
     color: rgba(252, 245, 229, 1);
     font-size: 16px;
     background-color: rgba(33, 33, 33, 1);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 654px) {

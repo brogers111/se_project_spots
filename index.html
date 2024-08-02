@@ -31,48 +31,15 @@
                 </section>
                 <section class="cards">
                     <ul class="cards__list">
-                        <li class="card">
-                            <img src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg" alt="val thorens" class="card__img">
-                            <div class="card__details">
-                                <h2 class="card__caption overflow overflow_type_single">Val Thorens</h2>
-                                <button type="button" class="card__button-like" aria-label="like button"></button>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <img src="./images/2-photo-by-ceiline-from-pexels.jpg" alt="restaurant terrace" class="card__img">
-                            <div class="card__details">
-                                <h2 class="card__caption overflow overflow_type_single">Restaurant Terrace</h2>
-                                <button type="button" class="card__button-like" aria-label="like button"></button>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <img src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg" alt="outdoor cafe" class="card__img">
-                            <div class="card__details">
-                                <h2 class="card__caption overflow overflow_type_single">An outdoor cafe</h2>
-                                <button type="button" class="card__button-like" aria-label="like button"></button>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <img src="./images/4-photo-by-maurice-laschet-from-pexels.jpg" alt="long bridge" class="card__img">
-                            <div class="card__details">
-                                <h2 class="card__caption overflow overflow_type_single">A very long bridge, over the forest...</h2>
-                                <button type="button" class="card__button-like" aria-label="like button"></button>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <img src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg" alt="tunnel with morning light" class="card__img">
-                            <div class="card__details">
-                                <h2 class="card__caption overflow overflow_type_single">Tunnel with morning light</h2>
-                                <button type="button" class="card__button-like" aria-label="like button"></button>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <img src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg" alt="mountain house" class="card__img">
-                            <div class="card__details">
-                                <h2 class="card__caption overflow overflow_type_single">Mountain house</h2>
-                                <button type="button" class="card__button-like" aria-label="like button"></button>
-                            </div>
-                        </li>
+                        <template id="card-template">
+                            <li class="card">
+                                <img class="card__img" src="" alt="">
+                                <div class="card__details">
+                                    <h2 class="card__caption overflow overflow_type_single"></h2>
+                                    <button type="button" class="card__button-like" aria-label="like button"></button>
+                                </div>
+                            </li>
+                        </template>
                     </ul>
                 </section>
             </main>
@@ -84,13 +51,13 @@
                     <button type="submit" class="modal__close-btn"></button>
                     <h2 class="modal__title">Edit profile</h2>
                     <form name="edit-profile" class="modal__form">
-                        <label for="name" class="modal__label">
+                        <label for="profile-name-input" class="modal__label">
                             Name
-                            <input id="name" type="text" class="modal__input" placeholder="Type your name">
+                            <input id="profile-name-input" type="text" class="modal__input" placeholder="Type your name">
                         </label>
-                        <label for="description" class="modal__label">
+                        <label for="profile-description-input" class="modal__label">
                             Description
-                            <input id="description" type="text" class="modal__input" placeholder="Describe yourself">
+                            <input id="profile-description-input" type="text" class="modal__input" placeholder="Describe yourself">
                         </label>
                         <button type="submit" class="modal__submit-btn">Save</button>
                     </form>
