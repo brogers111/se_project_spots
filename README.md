@@ -1,4 +1,4 @@
-# Spots Project (TripleTen Bootcamp - Sprint 3)
+# Spots Project (TripleTen Bootcamp - Sprints 3 & 4)
 
 ## Project Snapshots
 
@@ -12,7 +12,7 @@ The Spots application allows users to create profiles and upload their own uniqu
 
 ## Demo
 
-The demo for this project will be [linked here](https://drive.google.com/file/d/1-oEg8NBMb1xg5lhtA5YEGWZHWFxISQF6/view?usp=sharing) once a more finalized version is approved.
+The demo for this project is [linked here](https://drive.google.com/file/d/1-oEg8NBMb1xg5lhtA5YEGWZHWFxISQF6/view?usp=sharing).
 
 ## Tech Stack
 
@@ -22,6 +22,7 @@ The demo for this project will be [linked here](https://drive.google.com/file/d/
 - Flexbox
 - Responsive Design
 - Media Queries
+- JavaScript
 
 ## Design
 
