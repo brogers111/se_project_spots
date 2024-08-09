@@ -33,6 +33,7 @@
                     <ul class="cards__list">
                         <template id="card-template">
                             <li class="card">
+                                <button type="button" class="card__button-delete" aria-label="delete button"></button>
                                 <img class="card__img" src="" alt="">
                                 <div class="card__details">
                                     <h2 class="card__caption overflow overflow_type_single"></h2>
@@ -50,7 +51,7 @@
                 <div class="modal__container">
                     <button type="submit" class="modal__close-btn"></button>
                     <h2 class="modal__title">Edit profile</h2>
-                    <form name="edit-profile" class="modal__form">
+                    <form id="edit-profile-form" class="modal__form">
                         <label for="profile-name-input" class="modal__label">
                             Name
                             <input id="profile-name-input" type="text" class="modal__input" placeholder="Type your name">
@@ -61,6 +62,30 @@
                         </label>
                         <button type="submit" class="modal__submit-btn">Save</button>
                     </form>
+                </div>
+            </div>
+            <div class="modal" id="new-post-modal">
+                <div class="modal__container">
+                    <button type="submit" class="modal__close-btn"></button>
+                    <h2 class="modal__title">New post</h2>
+                    <form id="new-post-form" class="modal__form">
+                        <label for="new-post-url-input" class="modal__label">
+                            Image link
+                            <input id="new-post-url-input" name="link" type="url" class="modal__input" placeholder="Paste a link to the picture">
+                        </label>
+                        <label for="new-post-caption-input" class="modal__label">
+                            Caption
+                            <input id="new-post-caption-input" name="name" type="text" class="modal__input" placeholder="Type your caption">
+                        </label>
+                        <button type="submit" class="modal__submit-btn">Save</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal" id="preview-modal">
+                <div class="modal__container modal__container_type_preview">
+                    <button aria-label="Close modal" type="button" class="modal__close-btn modal__close-btn_type_preview"></button>
+                    <img src="" class="modal__card-img" />
+                    <p class="modal__card-caption"></p>
                 </div>
             </div>
         </div>
