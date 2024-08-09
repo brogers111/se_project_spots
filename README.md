@@ -1,4 +1,4 @@
-# Spots Project (TripleTen Bootcamp - Sprints 3 & 4)
+# Spots Project (TripleTen Bootcamp - Sprints 3, 4, & 5)
 
 ## Project Snapshots
 
@@ -8,7 +8,7 @@
 
 ## Description
 
-The Spots application allows users to create profiles and upload their own unique photos of places or experiences that they'd want to share with others.
+The Spots application allows users to create profiles and upload their own unique photos of places or experiences that they'd want to share with others. As of recent, users are able to toggle modals to edit their profile name & description, upload more photos with a URL and caption, delete photos, and preview existing posts.
 
 ## Demo
 
@@ -26,7 +26,7 @@ The demo for this project is [linked here](https://drive.google.com/file/d/1-oEg
 
 ## Design
 
-View this project's Figma file by clicking the [link here.](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+View this project's Figma file by clicking the [link here.](https://www.figma.com/design/1qCS9RkiKiVquBhpOJqjZ0/Sprint-5-Project%3A-Spots?node-id=51-138&t=FL5llljJcHfvfB7L-0)
 
 ## Deployment
 
@@ -34,8 +34,6 @@ Feel free to view the completed project by clicking the [link here.](https://bro
 
 ## Future Improvements
 
-- Button functionality
 - User onboarding flow
 - Login/logout functionality
-- Add/delete photo functionality
 - Edit existing photos & descriptions
