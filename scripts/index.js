@@ -35,7 +35,7 @@ const editProfileNameInput = editProfileModal.querySelector(
 const editProfileDescInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
-const editModal = editProfileModal.querySelector(".modal__form");
+const profileForm = editProfileModal.querySelector(".modal__form");
 
 // New Post Modal Selectors
 const newPostModal = document.querySelector("#new-post-modal");
@@ -44,7 +44,7 @@ const editPostImageInput = newPostModal.querySelector("#new-post-url-input");
 const editPostCaptionInput = newPostModal.querySelector(
   "#new-post-caption-input"
 );
-const submitPost = newPostModal.querySelector(".modal__form");
+const cardForm = newPostModal.querySelector(".modal__form");
 const cardNameInput = newPostModal.querySelector("#new-post-caption-input");
 const cardLinkInput = newPostModal.querySelector("#new-post-url-input");
 
@@ -64,11 +64,11 @@ const newPostButton = document.querySelector(".profile__button-new");
 
 // Modal Open/Close Functions
 function openModal(modal) {
-  modal.classList.add("modal-opened");
+  modal.classList.add("modal_opened");
 }
 
 function closeModal(modal) {
-  modal.classList.remove("modal-opened");
+  modal.classList.remove("modal_opened");
 }
 
 // Modal Submit Functions
@@ -83,6 +83,7 @@ function handleAddCardSubmit(evt) {
   evt.preventDefault();
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   cardsList.prepend(getCardElement(inputValues));
+  evt.target.reset();
   closeModal(newPostModal);
 }
 
@@ -97,7 +98,7 @@ editProfileCloseModal.addEventListener("click", () => {
   closeModal(editProfileModal);
 });
 
-editModal.addEventListener("submit", handleEditProfileSubmit);
+profileForm.addEventListener("submit", handleEditProfileSubmit);
 
 // New Post Modal Event Listeners
 newPostButton.addEventListener("click", () => {
@@ -108,7 +109,7 @@ newPostCloseModal.addEventListener("click", () => {
   closeModal(newPostModal);
 });
 
-submitPost.addEventListener("submit", handleAddCardSubmit);
+cardForm.addEventListener("submit", handleAddCardSubmit);
 
 // Card Functionality
 function getCardElement(data) {
@@ -140,13 +141,13 @@ function getCardElement(data) {
     previewModalImage.alt = data.name;
   });
 
-  previewCloseModalButton.addEventListener("click", () => {
-    closeModal(previewModal);
-  });
-
   return cardElement;
 }
 
 initialCards.forEach((card) => {
   cardsList.append(getCardElement(card));
+});
+
+previewCloseModalButton.addEventListener("click", () => {
+  closeModal(previewModal);
 });
