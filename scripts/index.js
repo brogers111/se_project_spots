@@ -35,7 +35,7 @@ const editProfileNameInput = editProfileModal.querySelector(
 const editProfileDescInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
-const profileForm = editProfileModal.querySelector(".modal__form");
+const profileForm = document.forms["edit-profile-form"];
 
 // New Post Modal Selectors
 const newPostModal = document.querySelector("#new-post-modal");
@@ -44,7 +44,7 @@ const editPostImageInput = newPostModal.querySelector("#new-post-url-input");
 const editPostCaptionInput = newPostModal.querySelector(
   "#new-post-caption-input"
 );
-const cardForm = newPostModal.querySelector(".modal__form");
+const cardForm = document.forms["new-post-form"];
 const cardNameInput = newPostModal.querySelector("#new-post-caption-input");
 const cardLinkInput = newPostModal.querySelector("#new-post-url-input");
 
@@ -63,6 +63,8 @@ const cardsList = document.querySelector(".cards__list");
 const newPostButton = document.querySelector(".profile__button-new");
 
 // Modal Open/Close Functions
+const closeButtons = document.querySelectorAll(".modal__close-btn");
+
 function openModal(modal) {
   modal.classList.add("modal_opened");
 }
@@ -70,6 +72,11 @@ function openModal(modal) {
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
 }
+
+closeButtons.forEach((button) => {
+  const modal = button.closest(".modal");
+  button.addEventListener("click", () => closeModal(modal));
+});
 
 // Modal Submit Functions
 function handleEditProfileSubmit(evt) {
@@ -94,19 +101,11 @@ editProfileButton.addEventListener("click", () => {
   openModal(editProfileModal);
 });
 
-editProfileCloseModal.addEventListener("click", () => {
-  closeModal(editProfileModal);
-});
-
 profileForm.addEventListener("submit", handleEditProfileSubmit);
 
 // New Post Modal Event Listeners
 newPostButton.addEventListener("click", () => {
   openModal(newPostModal);
-});
-
-newPostCloseModal.addEventListener("click", () => {
-  closeModal(newPostModal);
 });
 
 cardForm.addEventListener("submit", handleAddCardSubmit);
@@ -146,8 +145,4 @@ function getCardElement(data) {
 
 initialCards.forEach((card) => {
   cardsList.append(getCardElement(card));
-});
-
-previewCloseModalButton.addEventListener("click", () => {
-  closeModal(previewModal);
 });
