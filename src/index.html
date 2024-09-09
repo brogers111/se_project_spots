@@ -7,27 +7,26 @@
         <meta name="description" content="This is Brandon Rogers' version of Project 3 of the TipleTen bootcamp.">
         <meta name="keywords" content="html, css, media queries, responsive design, grid, flexbox">
         <title>Project Spots</title>
-        <link rel="stylesheet" href="pages/index.css">
         <link rel="icon" type="image/x-icon" href="./favicon.ico">
     </head>
     <body>
         <div class="page">
             <header class="header">
-                <img src="./images/logo.svg" alt="SPOTS Logo" class="header__logo">
+                <img id="image-spots-logo" alt="SPOTS Logo" class="header__logo">
             </header>
             <main class="content">
                 <section class="profile">
                     <div class="profile__details">
-                        <img src="./images/avatar.jpg" alt="Bessie Coleman Avatar" class="profile__avatar">
+                        <img id="image-profile-photo" alt="Bessie Coleman Avatar" class="profile__avatar">
                         <div class="profile__personal-info">
                             <div class="profile__personal-name-desc">
                                 <h1 class="profile__name overflow overflow_type_multi">Bessie Coleman</h1>
                                 <p class="profile__desc overflow overflow_type_multi">Civil Aviator</p>
                             </div>
-                            <button type="button" class="profile__button-edit"><img src="./images/pencil-icon.svg" alt="button icon" class="profile__button-edit-icon">Edit Profile</button>
+                            <button type="button" class="profile__button-edit"><img id="image-edit-icon" alt="button icon" class="profile__button-edit-icon">Edit Profile</button>
                         </div>
                     </div>
-                    <button type="button" class="profile__button-new"><img src="./images/plus-icon.svg" alt="plus icon" class="profile__button-new-icon">New Post</button>
+                    <button type="button" class="profile__button-new"><img id="image-plus-icon" alt="plus icon" class="profile__button-new-icon">New Post</button>
                 </section>
                 <section class="cards">
                     <ul class="cards__list">
@@ -93,7 +92,5 @@
                 </div>
             </div>
         </div>
-        <script src="scripts/validation.js" defer></script>
-        <script src="scripts/index.js" defer></script>
     </body> 
 </html>

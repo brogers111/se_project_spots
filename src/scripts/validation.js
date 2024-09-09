@@ -84,3 +84,5 @@ const enableValidation = (config) => {
 };
 
 enableValidation(settings);
+
+export { enableValidation, settings, disableButton, resetValidation };

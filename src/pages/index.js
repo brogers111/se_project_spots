@@ -1,3 +1,15 @@
+import {
+  enableValidation,
+  settings,
+  disableButton,
+  resetValidation,
+} from "../scripts/validation.js";
+import "./index.css";
+import spotsLogoSrc from "../images/logo.svg";
+import profileSrc from "../images/avatar.jpg";
+import editIconSrc from "../images/pencil-icon.svg";
+import plusIconSrc from "../images/plus-icon.svg";
+
 const initialCards = [
   {
     name: "Val Thorens",
@@ -68,6 +80,19 @@ const newPostButton = document.querySelector(".profile__button-new");
 // All Modal Functions
 const closeButtons = document.querySelectorAll(".modal__close-btn");
 const allModals = document.querySelectorAll(".modal");
+
+// All Images
+const spotsLogoImage = document.getElementById("image-spots-logo");
+spotsLogoImage.src = spotsLogoSrc;
+
+const spotsProfileImage = document.getElementById("image-profile-photo");
+spotsProfileImage.src = profileSrc;
+
+const spotsPencilImage = document.getElementById("image-edit-icon");
+spotsPencilImage.src = editIconSrc;
+
+const spotsPlusImage = document.getElementById("image-plus-icon");
+spotsPlusImage.src = plusIconSrc;
 
 function handleEscapeKey(evt) {
   if (evt.key === "Escape") {
@@ -176,3 +201,5 @@ function getCardElement(data) {
 initialCards.forEach((card) => {
   cardsList.append(getCardElement(card));
 });
+
+enableValidation(settings);
