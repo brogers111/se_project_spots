@@ -259,7 +259,7 @@
 
     .modal__submit-btn_type_delete,
     .modal__submit-btn_type_cancel{
-        min-width: 156px;
+        min-width: 0;
         margin: 0;
     }
 }

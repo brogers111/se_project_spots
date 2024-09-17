@@ -222,6 +222,7 @@ function handleAvatarSubmit(evt) {
     .editAvatarInfo({ avatar: avatarInput.value })
     .then((data) => {
       spotsProfileImage.src = data.avatar;
+      evt.target.reset();
       disableButton(profileSubmitButton, settings);
       closeModal(avatarModal);
     })
@@ -237,7 +238,7 @@ function handleLike(evt, cardId) {
   const isLiked = evt.target.classList.contains("card__button-like_active");
   api
     .changeLike({ _id: cardId, isLiked: isLiked })
-    .then(evt.target.classList.toggle("card__button-like_active"))
+    .then(() => evt.target.classList.toggle("card__button-like_active"))
     .catch((err) => {
       console.error(err);
     });
