@@ -86,6 +86,10 @@
     color: #212121;
 }
 
+.modal__title-delete{
+    font-size: 24px;
+}
+
 .modal__label{
     color: rgba(33, 33, 33, 0.7);
     margin-bottom: 32px;
@@ -160,6 +164,32 @@
     background-color: rgba(33, 33, 33, 0.5);
 }
 
+.modal__form-delete{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal__submit-btn_type_delete{
+    background-color: rgba(255, 101, 101, 1);
+    color: rgba(33, 33, 33, 1);
+}
+
+.modal__submit-btn_type_delete:hover{
+    background-color: rgba(255, 51, 51, 1);
+}
+
+.modal__submit-btn_type_cancel{
+    background-color: transparent;
+    border: 1px solid rgba(33, 33, 33, 1);
+    color: rgba(33, 33, 33, 1);
+}
+
+.modal__submit-btn_type_cancel:hover{
+    background-color: rgba(33, 33, 33, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
 @media screen and (max-width: 930px) {
     .modal__close-btn_type_preview{
         top: -48px;
@@ -174,6 +204,11 @@
 
     .modal__card-caption{
         font-size: 16px;
+    }
+
+    .modal__submit-btn_type_delete,
+    .modal__submit-btn_type_cancel{
+        width: 156px;
     }
 }
 
@@ -220,5 +255,11 @@
         padding: 18px;
         min-width: calc(100vw - 44px);
         justify-content: center;
+    }
+
+    .modal__submit-btn_type_delete,
+    .modal__submit-btn_type_cancel{
+        min-width: 0;
+        margin: 0;
     }
 }

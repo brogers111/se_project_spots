@@ -17,7 +17,12 @@
             <main class="content">
                 <section class="profile">
                     <div class="profile__details">
-                        <img id="image-profile-photo" alt="Bessie Coleman Avatar" class="profile__avatar">
+                        <div class="profile__avatar-container">
+                            <button class="profile__avatar-btn">
+                                <img id="profile-avatar-edit" alt="Pencil Icon" class="profile__pencil-icon">
+                            </button>
+                            <img id="image-profile-photo" alt="Bessie Coleman Avatar" class="profile__avatar">
+                        </div>
                         <div class="profile__personal-info">
                             <div class="profile__personal-name-desc">
                                 <h1 class="profile__name overflow overflow_type_multi">Bessie Coleman</h1>
@@ -89,6 +94,30 @@
                     <button aria-label="Close modal" type="button" class="modal__close-btn modal__close-btn_type_preview"></button>
                     <img src="" class="modal__card-img" />
                     <p class="modal__card-caption"></p>
+                </div>
+            </div>
+            <div class="modal" id="edit-avatar-modal">
+                <div class="modal__container">
+                    <button aria-label="Close modal" type="button" class="modal__close-btn"></button>
+                    <h2 class="modal__title">Edit profile avatar</h2>
+                    <form id="edit-avatar-form" class="modal__form" novalidate>
+                        <label for="profile-avatar-input" class="modal__label">
+                            Profile Picture
+                            <input id="profile-avatar-input" name="avatar" type="url" class="modal__input" placeholder="Paste the link to an image" minlength="2" required>
+                            <span class="profile-avatar-input-error"></span>
+                        </label>
+                        <button type="submit" class="modal__submit-btn">Save</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal" id="delete-modal">
+                <div class="modal__container">
+                    <button aria-label="Close modal" type="button" class="modal__close-btn modal__close-btn_type_preview"></button>
+                    <h2 class="modal__title modal__title-delete">Are you sure you want to delete this image?</h2>
+                    <form id="delete-form" class="modal__form modal__form-delete" novalidate>
+                        <button type="submit" class="modal__submit-btn modal__submit-btn_type_delete">Delete</button>
+                        <button type="button" class="modal__submit-btn modal__submit-btn_type_cancel">Cancel</button>
+                    </form>
                 </div>
             </div>
         </div>
